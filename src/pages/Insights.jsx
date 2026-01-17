@@ -4,6 +4,17 @@ import Hero from '../components/Hero';
 import InsightCard from '../components/InsightCard';
 import './Insights.css';
 
+// Import insight images
+import taxPlanningImg from '../assets/images/insight-tax-planning.png';
+import auditStandardsImg from '../assets/images/insight-audit-standards.png';
+import cashFlowImg from '../assets/images/insight-cash-flow.png';
+import healthcareImg from '../assets/images/insight-healthcare.png';
+import webinarImg from '../assets/images/insight-webinar.png';
+import stateTaxImg from '../assets/images/insight-state-tax.png';
+import maDiligenceImg from '../assets/images/insight-ma-diligence.png';
+import techSectorImg from '../assets/images/insight-tech-sector.png';
+import internalControlsImg from '../assets/images/insight-controls.png';
+
 const Insights = () => {
     const [searchParams] = useSearchParams();
     const location = useLocation();
@@ -54,13 +65,14 @@ const Insights = () => {
     const insights = [
         {
             id: 1,
-            title: '2024 Tax Planning Strategies for Small Businesses',
-            excerpt: 'Discover essential tax-saving strategies that can help your small business minimize liability and maximize growth potential in the new year.',
+            title: '2026 Tax Planning Strategies for Startups',
+            excerpt: 'Discover essential tax-saving strategies that can help your startup minimize liability and maximize growth potential in the new year.',
             category: 'tax',
             categoryLabel: 'Tax Update',
-            date: 'December 15, 2024',
+            date: 'January 15, 2026',
             readTime: '5 min read',
-            path: '/insights/tax-planning-2024',
+            path: '/insights/tax-planning-2026',
+            image: taxPlanningImg,
             featured: true
         },
         {
@@ -69,29 +81,32 @@ const Insights = () => {
             excerpt: 'A comprehensive guide to the latest changes in audit requirements and how they affect your business compliance.',
             category: 'audit',
             categoryLabel: 'Audit',
-            date: 'December 10, 2024',
+            date: 'January 12, 2026',
             readTime: '4 min read',
-            path: '/insights/new-audit-standards'
+            path: '/insights/new-audit-standards',
+            image: auditStandardsImg
         },
         {
             id: 3,
-            title: 'CFO Insights: Managing Cash Flow in Uncertain Times',
-            excerpt: 'Expert tips on maintaining healthy cash flow and financial stability during periods of economic uncertainty.',
+            title: 'CFO Insights: Managing Cash Flow for New Businesses',
+            excerpt: 'Expert tips on maintaining healthy cash flow and financial stability during your startup phase.',
             category: 'advisory',
             categoryLabel: 'Advisory',
-            date: 'December 5, 2024',
+            date: 'January 10, 2026',
             readTime: '6 min read',
-            path: '/insights/cfo-cash-flow'
+            path: '/insights/cfo-cash-flow',
+            image: cashFlowImg
         },
         {
             id: 4,
-            title: 'Healthcare Industry Financial Trends 2025',
+            title: 'Healthcare Industry Financial Trends 2026',
             excerpt: 'Key financial trends shaping the healthcare industry and what they mean for your organization.',
             category: 'industry',
             categoryLabel: 'Industry Report',
-            date: 'November 28, 2024',
+            date: 'January 8, 2026',
             readTime: '8 min read',
-            path: '/insights/healthcare-trends-2025'
+            path: '/insights/healthcare-trends-2026',
+            image: healthcareImg
         },
         {
             id: 5,
@@ -99,9 +114,10 @@ const Insights = () => {
             excerpt: 'Join our experts as they discuss strategies to maximize your R&D tax credits while maintaining compliance.',
             category: 'webinar',
             categoryLabel: 'Webinar',
-            date: 'November 20, 2024',
+            date: 'January 6, 2026',
             readTime: '45 min watch',
-            path: '/insights/webinars/rd-tax-credit'
+            path: '/insights/webinars/rd-tax-credit',
+            image: webinarImg
         },
         {
             id: 6,
@@ -109,9 +125,10 @@ const Insights = () => {
             excerpt: 'Understanding state tax nexus requirements in the post-Wayfair era and how to maintain multi-state compliance.',
             category: 'tax',
             categoryLabel: 'Tax Update',
-            date: 'November 15, 2024',
+            date: 'January 5, 2026',
             readTime: '7 min read',
-            path: '/insights/state-tax-nexus'
+            path: '/insights/state-tax-nexus',
+            image: stateTaxImg
         },
         {
             id: 7,
@@ -119,9 +136,10 @@ const Insights = () => {
             excerpt: 'Essential due diligence practices to protect your interests in mergers and acquisitions.',
             category: 'advisory',
             categoryLabel: 'Advisory',
-            date: 'November 10, 2024',
+            date: 'January 4, 2026',
             readTime: '6 min read',
-            path: '/insights/ma-due-diligence'
+            path: '/insights/ma-due-diligence',
+            image: maDiligenceImg
         },
         {
             id: 8,
@@ -129,9 +147,10 @@ const Insights = () => {
             excerpt: 'Analysis of financial trends in the technology sector and strategic considerations for tech companies.',
             category: 'industry',
             categoryLabel: 'Industry Report',
-            date: 'November 5, 2024',
+            date: 'January 3, 2026',
             readTime: '10 min read',
-            path: '/insights/tech-outlook'
+            path: '/insights/tech-outlook',
+            image: techSectorImg
         },
         {
             id: 9,
@@ -139,9 +158,10 @@ const Insights = () => {
             excerpt: 'Step-by-step guidance on evaluating and strengthening your organization\'s internal controls.',
             category: 'audit',
             categoryLabel: 'Audit',
-            date: 'October 30, 2024',
+            date: 'January 2, 2026',
             readTime: '5 min read',
-            path: '/insights/internal-controls'
+            path: '/insights/internal-controls',
+            image: internalControlsImg
         },
     ];
 
@@ -208,6 +228,7 @@ const Insights = () => {
                                     date={insight.date}
                                     readTime={insight.readTime}
                                     path={insight.path}
+                                    image={insight.image}
                                     featured={index === 0 && activeFilter === 'all'}
                                 />
                             ))}

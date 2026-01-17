@@ -48,10 +48,10 @@ const Home = () => {
     ];
 
     const stats = [
-        { value: 25, suffix: '+', label: 'Years Experience', icon: '📅' },
-        { value: 5000, suffix: '+', label: 'Clients Served', icon: '👥' },
-        { value: 98, suffix: '%', label: 'Client Retention', icon: '⭐' },
-        { value: 150, suffix: '+', label: 'Expert Advisors', icon: '👨‍💼' },
+        { value: 2026, suffix: '', label: 'Founded', icon: '🚀' },
+        { value: 50, suffix: '+', label: 'Clients Served', icon: '👥' },
+        { value: 100, suffix: '%', label: 'Client Satisfaction', icon: '⭐' },
+        { value: 4, suffix: '+', label: 'Expert Team', icon: '👨‍💼' },
     ];
 
     const industries = [
@@ -65,27 +65,27 @@ const Home = () => {
 
     const insights = [
         {
-            title: '2024 Tax Planning Strategies for Small Businesses',
-            excerpt: 'Discover essential tax-saving strategies that can help your small business minimize liability and maximize growth potential.',
+            title: '2026 Tax Planning Strategies for Startups',
+            excerpt: 'Discover essential tax-saving strategies that can help your startup minimize liability and maximize growth potential.',
             category: 'Tax Update',
-            date: 'December 15, 2024',
+            date: 'January 10, 2026',
             readTime: '5 min read',
-            path: '/insights/tax-planning-2024',
+            path: '/insights/tax-planning-2026',
             featured: true
         },
         {
             title: 'Understanding the New Audit Standards',
             excerpt: 'A comprehensive guide to the latest changes in audit requirements and how they affect your business.',
             category: 'Audit',
-            date: 'December 10, 2024',
+            date: 'January 8, 2026',
             readTime: '4 min read',
             path: '/insights/new-audit-standards'
         },
         {
-            title: 'CFO Insights: Managing Cash Flow in Uncertain Times',
-            excerpt: 'Expert tips on maintaining healthy cash flow and financial stability during economic uncertainty.',
+            title: 'CFO Insights: Managing Cash Flow for New Businesses',
+            excerpt: 'Expert tips on maintaining healthy cash flow and financial stability during your startup phase.',
             category: 'Advisory',
-            date: 'December 5, 2024',
+            date: 'January 5, 2026',
             readTime: '6 min read',
             path: '/insights/cfo-cash-flow'
         },
@@ -119,9 +119,9 @@ const Home = () => {
         <main className="home-page">
             {/* Hero Section */}
             <Hero
-                subtitle="Trusted Financial Partners"
+                subtitle="Your Modern Financial Partner – Est. 2026"
                 title={<>Precision in Every <span>Number.</span> Excellence in Every <span>Solution.</span></>}
-                description="We provide comprehensive accounting, tax, and advisory services that help businesses achieve financial clarity and sustainable growth."
+                description="We are a fresh, innovative accounting startup providing comprehensive tax, and advisory services that help businesses achieve financial clarity and sustainable growth."
                 primaryCTA={{ label: "Get Started", path: "/contact" }}
                 secondaryCTA={{ label: "Our Services", path: "/services" }}
             />
@@ -270,11 +270,11 @@ const Home = () => {
                                 <Link to="/contact" className="btn btn-primary btn-lg">
                                     Schedule Consultation
                                 </Link>
-                                <a href="tel:+15551234567" className="btn btn-outline btn-lg">
+                                <a href="tel:+918920473074" className="btn btn-outline btn-lg">
                                     <svg viewBox="0 0 24 24" fill="currentColor">
                                         <path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z" />
                                     </svg>
-                                    (555) 123-4567
+                                    +91 8920473074
                                 </a>
                             </div>
                         </div>

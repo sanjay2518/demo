@@ -218,6 +218,28 @@
 
 .contact-form-success p {
     color: var(--gray-600);
+    margin-bottom: var(--space-4);
+}
+
+.contact-form-success .response-note {
+    background: linear-gradient(135deg, var(--accent-green) 0%, #00b85c 100%);
+    color: var(--primary-black);
+    padding: var(--space-4) var(--space-6);
+    border-radius: var(--radius-lg);
+    margin-bottom: var(--space-4);
+    font-size: var(--text-base);
+}
+
+.contact-form-success .response-note strong {
+    display: block;
+    font-size: var(--text-lg);
+    margin-top: var(--space-2);
+}
+
+.contact-form-success .check-spam {
+    font-size: var(--text-sm);
+    color: var(--gray-500);
+    font-style: italic;
     margin-bottom: var(--space-6);
 }
 

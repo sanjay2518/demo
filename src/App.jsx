@@ -7,6 +7,7 @@ import About from './pages/About';
 import Services from './pages/Services';
 import Industries from './pages/Industries';
 import Insights from './pages/Insights';
+import InsightDetail from './pages/InsightDetail';
 import Careers from './pages/Careers';
 import Contact from './pages/Contact';
 import Search from './pages/Search';
@@ -38,7 +39,8 @@ function App() {
           <Route path="/industries" element={<Industries />} />
           <Route path="/industries/:industryType" element={<Industries />} />
           <Route path="/insights" element={<Insights />} />
-          <Route path="/insights/:slug" element={<Insights />} />
+          <Route path="/insights/webinars/:slug" element={<InsightDetail />} />
+          <Route path="/insights/:slug" element={<InsightDetail />} />
           <Route path="/careers" element={<Careers />} />
           <Route path="/careers/:section" element={<Careers />} />
           <Route path="/contact" element={<Contact />} />

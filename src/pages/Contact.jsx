@@ -5,25 +5,11 @@ import './Contact.css';
 const Contact = () => {
     const offices = [
         {
-            city: 'New York',
-            address: '123 Financial District',
-            address2: 'New York, NY 10004',
-            phone: '(555) 123-4567',
-            email: 'newyork@precisionaccounting.com'
-        },
-        {
-            city: 'Chicago',
-            address: '456 Michigan Avenue',
-            address2: 'Chicago, IL 60601',
-            phone: '(555) 234-5678',
-            email: 'chicago@precisionaccounting.com'
-        },
-        {
-            city: 'Los Angeles',
-            address: '789 Wilshire Blvd',
-            address2: 'Los Angeles, CA 90017',
-            phone: '(555) 345-6789',
-            email: 'losangeles@precisionaccounting.com'
+            city: 'Delhi',
+            address: '56, New Layal Pur',
+            address2: 'Dixit Gali, Delhi-51',
+            phone: '+91 8920473074',
+            email: 'reliableprofessionals.co@gmail.com'
         },
     ];
 
@@ -70,7 +56,7 @@ const Contact = () => {
                                         </div>
                                         <div className="info-content">
                                             <h4>Phone</h4>
-                                            <a href="tel:+15551234567">(555) 123-4567</a>
+                                            <a href="tel:+918920473074">+91 8920473074</a>
                                         </div>
                                     </div>
 
@@ -82,7 +68,7 @@ const Contact = () => {
                                         </div>
                                         <div className="info-content">
                                             <h4>Email</h4>
-                                            <a href="mailto:contact@precisionaccounting.com">contact@precisionaccounting.com</a>
+                                            <a href="mailto:reliableprofessionals.co@gmail.com">reliableprofessionals.co@gmail.com</a>
                                         </div>
                                     </div>
 

@@ -28,10 +28,10 @@ const Search = () => {
         { type: 'Industry', title: 'Non-Profit', description: 'Specialized accounting for non-profit organizations and foundations.', path: '/industries/non-profit', keywords: ['non-profit', 'nonprofit', 'charity', 'foundation', '501c3'] },
 
         // Insights
-        { type: 'Insight', title: '2024 Tax Planning Strategies for Small Businesses', description: 'Discover essential tax-saving strategies for your small business.', path: '/insights', keywords: ['tax planning', 'small business', 'tax strategies', '2024'] },
+        { type: 'Insight', title: '2026 Tax Planning Strategies for Startups', description: 'Discover essential tax-saving strategies for your startup.', path: '/insights', keywords: ['tax planning', 'startup', 'tax strategies', '2026'] },
         { type: 'Insight', title: 'Understanding the New Audit Standards', description: 'A comprehensive guide to the latest changes in audit requirements.', path: '/insights', keywords: ['audit standards', 'compliance', 'regulations'] },
-        { type: 'Insight', title: 'CFO Insights: Managing Cash Flow', description: 'Expert tips on maintaining healthy cash flow during uncertain times.', path: '/insights', keywords: ['cash flow', 'CFO', 'financial management'] },
-        { type: 'Insight', title: 'Healthcare Industry Financial Trends 2025', description: 'Key financial trends shaping the healthcare industry.', path: '/insights', keywords: ['healthcare trends', 'financial trends', '2025'] },
+        { type: 'Insight', title: 'CFO Insights: Managing Cash Flow for New Businesses', description: 'Expert tips on maintaining healthy cash flow during your startup phase.', path: '/insights', keywords: ['cash flow', 'CFO', 'financial management', 'startup'] },
+        { type: 'Insight', title: 'Healthcare Industry Financial Trends 2026', description: 'Key financial trends shaping the healthcare industry.', path: '/insights', keywords: ['healthcare trends', 'financial trends', '2026'] },
         { type: 'Insight', title: 'R&D Tax Credit Maximization', description: 'Strategies to maximize your R&D tax credits while maintaining compliance.', path: '/insights', keywords: ['R&D', 'tax credit', 'research and development'] },
 
         // Pages

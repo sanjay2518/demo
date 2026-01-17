@@ -116,7 +116,7 @@ const Careers = () => {
             />
 
             {/* Why Join Us */}
-            <section className="why-join section-lg">
+            <section id="why-join" className="why-join section-lg">
                 <div className="container">
                     <div className="why-join-content">
                         <div className="why-join-text">

@@ -5,12 +5,17 @@ import Stats from '../components/Stats';
 import TeamCard from '../components/TeamCard';
 import './About.css';
 
+// Team Member Images
+import teamMember1 from '../assets/images/team-member-1.jpg';
+import teamMember2 from '../assets/images/team-member-2.png';
+import teamMember4 from '../assets/images/team-member-4.jpg';
+
 const About = () => {
     const stats = [
-        { value: 25, suffix: '+', label: 'Years Experience', icon: '📅' },
-        { value: 5000, suffix: '+', label: 'Clients Served', icon: '👥' },
-        { value: 50, prefix: '$', suffix: 'B+', label: 'Assets Managed', icon: '💰' },
-        { value: 150, suffix: '+', label: 'Team Members', icon: '👨‍💼' },
+        { value: 2026, suffix: '', label: 'Founded', icon: '🚀' },
+        { value: 50, suffix: '+', label: 'Clients Served', icon: '👥' },
+        { value: 100, suffix: '%', label: 'Client Satisfaction', icon: '⭐' },
+        { value: 4, suffix: '+', label: 'Team Members', icon: '👨‍💼' },
     ];
 
     const values = [
@@ -38,41 +43,44 @@ const About = () => {
 
     const leadership = [
         {
-            name: 'Robert Anderson',
-            role: 'Managing Partner',
-            bio: '30+ years of experience in public accounting and advisory services.',
+            name: 'Athrav Kumar',
+            role: 'Accounting & Finance Specialist',
+            image: teamMember1,
+            bio: 'I work in the field of accounting and finance, handling financial records, reporting, and documentation work. I believe in doing my work with clarity, honesty, and consistency rather than relying on shortcuts. I focus on keeping records accurate, understanding the logic behind numbers, and improving steadily through regular practice. Calm, disciplined, and detail-oriented by nature, I also have a creative side in writing and visual storytelling, which helps me communicate ideas clearly. I aim to grow into someone people can genuinely trust with their financial work.',
             linkedin: '#',
-            email: 'randerson@precisionaccounting.com'
+            email: 'sanjay@precisionaccounting.com'
         },
         {
-            name: 'Jennifer Martinez',
-            role: 'Partner, Tax Services',
-            bio: 'Expert in corporate taxation and international tax planning.',
+            name: 'Tasleem Shah',
+            role: 'Lead Generation & Virtual Assistant – Admin Support',
+            image: teamMember2,
+            bio: 'Provides reliable support in lead generation, virtual assistance, and administrative operations. Responsible for prospect research, data collection and verification, CRM-ready lead preparation, calendar and email support, and day-to-day administrative tasks to help the firm operate efficiently and connect with potential clients.',
             linkedin: '#',
-            email: 'jmartinez@precisionaccounting.com'
+            email: 'tasleem@precisionaccounting.com'
         },
         {
-            name: 'David Chen',
-            role: 'Partner, Audit & Assurance',
-            bio: 'Specializes in complex audit engagements for public companies.',
+            name: 'Paras',
+            role: 'Software Engineer',
+            bio: 'I\'m a Software Engineer passionate about building intelligent, scalable, and high-performance digital solutions. With a strong foundation in C++, Python, Web Development, and Machine Learning, I enjoy transforming complex problems into clean, real-world applications. My background in AI and Machine Learning from NSUT, New Delhi, has shaped the way I think about systems, data, and optimization. I thrive on writing efficient code, designing intuitive user experiences, and engineering solutions that balance logic with creativity. Having solved 700+ algorithmic challenges, problem-solving comes naturally to me. I\'m comfortable working across technologies, adapting quickly, and continuously pushing myself to build better, smarter systems. Driven by curiosity and growth, I\'m focused on evolving into a future-ready technologist who builds with purpose and impact.',
             linkedin: '#',
-            email: 'dchen@precisionaccounting.com'
+            email: 'paras@precisionaccounting.com'
         },
         {
-            name: 'Sarah Thompson',
-            role: 'Partner, Advisory Services',
-            bio: 'Leads M&A advisory and business transformation initiatives.',
+            name: 'Sanjay A',
+            role: 'Full Stack Developer',
+            image: teamMember4,
+            bio: 'Creative and detail-oriented Full Stack Web Developer with a strong foundation in building responsive, scalable, and user-centric web applications. I work with HTML, CSS, JavaScript, React, Node.js, Python, Java, SQL, and MongoDB, focusing on clean code, performance, and real-world usability. I have hands-on experience developing full-stack projects, including an E-commerce platform, a French Learning Web Application, and an Emotion-Based Music Recommendation System that uses AI and real-time facial expression analysis to personalize user experiences. These projects strengthened my skills in REST APIs, database integration, and end-to-end application development. Alongside development, I bring experience in automation and cloud technologies, supported by certifications such as UiPath Certified Automation Developer – Associate and SnowPro Associate – Platform.',
             linkedin: '#',
-            email: 'sthompson@precisionaccounting.com'
+            email: 'sanjaya@precisionaccounting.com'
         },
     ];
 
     const timeline = [
-        { year: '1999', title: 'Founded', description: 'Precision Accounting established with a vision to provide excellent financial services.' },
-        { year: '2005', title: 'National Expansion', description: 'Opened offices in major cities across the country.' },
-        { year: '2012', title: 'Technology Integration', description: 'Launched cloud-based accounting platform for clients.' },
-        { year: '2018', title: 'Advisory Services', description: 'Expanded into strategic advisory and consulting services.' },
-        { year: '2024', title: 'Industry Leader', description: 'Recognized as one of the top accounting firms in the nation.' },
+        { year: '2026', title: 'Founded', description: 'Precision Accounting launched as a modern startup with a vision to provide innovative financial services.' },
+        { year: '2026', title: 'Team Assembly', description: 'Built a diverse team of experts in accounting, technology, and business operations.' },
+        { year: '2026', title: 'Digital-First Approach', description: 'Launched with cloud-based solutions and AI-powered financial tools from day one.' },
+        { year: '2026', title: 'First Clients', description: 'Started serving our first clients with personalized, tech-driven accounting solutions.' },
+        { year: 'Future', title: 'Growth Vision', description: 'Committed to becoming a trusted partner for businesses seeking modern financial excellence.' },
     ];
 
     // Scroll to section if hash is present in URL
@@ -94,8 +102,8 @@ const About = () => {
             <Hero
                 size="medium"
                 subtitle="About Precision Accounting"
-                title="Building Financial Excellence Since 1999"
-                description="We are a team of dedicated professionals committed to helping businesses achieve their financial goals through expert guidance and innovative solutions."
+                title="A Fresh Start in Financial Excellence – Est. 2026"
+                description="We are a passionate startup team committed to helping businesses achieve their financial goals through innovative solutions, modern technology, and personalized service."
                 primaryCTA={{ label: "Meet Our Team", path: "/about/leadership" }}
                 secondaryCTA={{ label: "Our Services", path: "/services" }}
             />
@@ -109,12 +117,12 @@ const About = () => {
                             <h2>Empowering Businesses Through Financial Clarity</h2>
                             <p>
                                 At Precision Accounting, our mission is to provide exceptional accounting,
-                                tax, and advisory services that empower our clients to make informed decisions
-                                and achieve sustainable growth.
+                                tax, and advisory services that empower startups and growing businesses to make
+                                informed decisions and achieve sustainable growth.
                             </p>
                             <p>
-                                We believe that every business, regardless of size, deserves access to
-                                world-class financial expertise. Our approach combines deep technical knowledge
+                                As a 2026 startup, we combine fresh perspectives with modern technology
+                                to deliver world-class financial expertise. Our approach blends innovation
                                 with a genuine understanding of your business challenges.
                             </p>
                             <div className="mission-features">
@@ -152,7 +160,7 @@ const About = () => {
                 stats={stats}
                 variant="minimal"
                 subtitle="By The Numbers"
-                title="A Track Record of Excellence"
+                title="Our Startup Journey So Far"
             />
 
             {/* Values Section */}
@@ -180,7 +188,7 @@ const About = () => {
                 <div className="container">
                     <div className="section-header text-center">
                         <span className="section-subtitle">Our Journey</span>
-                        <h2>25 Years of Growth & Excellence</h2>
+                        <h2>Building Our Vision in 2026</h2>
                     </div>
 
                     <div className="timeline">
@@ -230,34 +238,34 @@ const About = () => {
                 <div className="container">
                     <div className="recognition-content">
                         <div className="recognition-text">
-                            <span className="section-subtitle">Recognition</span>
-                            <h2>Industry Awards & Accolades</h2>
+                            <span className="section-subtitle">Our Commitments</span>
+                            <h2>What We Stand For</h2>
                             <p>
-                                Our commitment to excellence has been recognized by leading industry
-                                organizations and publications.
+                                As a 2026 startup, we are committed to building trust through
+                                transparency, innovation, and exceptional service.
                             </p>
                         </div>
 
                         <div className="awards-grid">
                             <div className="award-item">
-                                <div className="award-icon">🏆</div>
-                                <h4>Top 100 Accounting Firms</h4>
-                                <p>Accounting Today, 2024</p>
+                                <div className="award-icon">🚀</div>
+                                <h4>Innovation Focus</h4>
+                                <p>Modern, tech-driven solutions</p>
                             </div>
                             <div className="award-item">
-                                <div className="award-icon">⭐</div>
-                                <h4>Best Places to Work</h4>
-                                <p>Forbes, 2024</p>
+                                <div className="award-icon">💯</div>
+                                <h4>Client-First Approach</h4>
+                                <p>100% satisfaction commitment</p>
                             </div>
                             <div className="award-item">
-                                <div className="award-icon">🎖️</div>
-                                <h4>Excellence in Client Service</h4>
-                                <p>AICPA, 2023</p>
+                                <div className="award-icon">⚡</div>
+                                <h4>Tech-Driven Solutions</h4>
+                                <p>AI & cloud-powered services</p>
                             </div>
                             <div className="award-item">
-                                <div className="award-icon">💎</div>
-                                <h4>Most Innovative Firm</h4>
-                                <p>CPA Practice Advisor, 2023</p>
+                                <div className="award-icon">✅</div>
+                                <h4>Quality Assurance</h4>
+                                <p>Accuracy in every detail</p>
                             </div>
                         </div>
                     </div>

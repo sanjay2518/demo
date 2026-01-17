@@ -81,7 +81,7 @@ const Header = () => {
       label: 'Careers',
       path: '/careers',
       submenu: [
-        { label: 'Why Join Us', path: '/careers' },
+        { label: 'Why Join Us', path: '/careers#why-join' },
         { label: 'Open Positions', path: '/careers#positions' },
         { label: 'Culture', path: '/careers#culture' },
         { label: 'Benefits', path: '/careers#benefits' },

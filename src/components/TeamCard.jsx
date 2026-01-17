@@ -37,7 +37,13 @@ const TeamCard = ({ name, role, image, bio, linkedin, email }) => {
             <div className="team-card-content">
                 <h3 className="team-card-name">{name}</h3>
                 <span className="team-card-role">{role}</span>
-                {bio && <p className="team-card-bio">{bio}</p>}
+                {bio && (
+                    <div className="team-card-bio">
+                        {bio.split('\n\n').map((paragraph, index) => (
+                            <p key={index}>{paragraph}</p>
+                        ))}
+                    </div>
+                )}
             </div>
         </div>
     );

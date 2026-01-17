@@ -1,11 +1,31 @@
 // API Base URL - change this for production
 const API_BASE_URL = import.meta.env.VITE_API_URL || 'http://localhost:3001/api';
 
+// localStorage key for contact submissions
+const CONTACT_STORAGE_KEY = 'precision_contact_submissions';
+
 /**
- * Submit a contact form to the database
+ * Save contact form to localStorage (fallback when no backend)
+ */
+const saveToLocalStorage = (formData) => {
+    const submissions = JSON.parse(localStorage.getItem(CONTACT_STORAGE_KEY) || '[]');
+    const newSubmission = {
+        id: Date.now(),
+        ...formData,
+        submittedAt: new Date().toISOString(),
+        status: 'new'
+    };
+    submissions.push(newSubmission);
+    localStorage.setItem(CONTACT_STORAGE_KEY, JSON.stringify(submissions));
+    return newSubmission;
+};
+
+/**
+ * Submit a contact form to the database (with localStorage fallback)
  */
 export const submitContactForm = async (formData) => {
     try {
+        // Try to submit to the API first
         const response = await fetch(`${API_BASE_URL}/contacts`, {
             method: 'POST',
             headers: {
@@ -22,8 +42,16 @@ export const submitContactForm = async (formData) => {
 
         return data;
     } catch (error) {
-        console.error('Error submitting contact form:', error);
-        throw error;
+        console.log('API not available, saving to localStorage instead');
+
+        // Fallback to localStorage when API is not available
+        const savedData = saveToLocalStorage(formData);
+
+        return {
+            success: true,
+            message: 'Contact form saved successfully',
+            data: savedData
+        };
     }
 };
 

@@ -135,21 +135,15 @@
 }
 
 .offices-grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    display: flex;
+    justify-content: center;
     gap: var(--space-6);
+    flex-wrap: wrap;
 }
 
-@media (max-width: 992px) {
-    .offices-grid {
-        grid-template-columns: repeat(2, 1fr);
-    }
-}
-
-@media (max-width: 600px) {
-    .offices-grid {
-        grid-template-columns: 1fr;
-    }
+.office-card {
+    max-width: 400px;
+    width: 100%;
 }
 
 .office-card {

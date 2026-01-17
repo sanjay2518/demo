@@ -113,7 +113,12 @@ const ContactForm = ({ onSubmit }) => {
                     </svg>
                 </div>
                 <h3>Thank You!</h3>
-                <p>Your message has been saved to our database. We will get back to you within 24 hours.</p>
+                <p>Your message has been received successfully.</p>
+                <p className="response-note">
+                    Our team will respond to you within 24 hours from:<br />
+                    <strong>reliableprofessionals.co@gmail.com</strong>
+                </p>
+                <p className="check-spam">Please check your spam folder if you don't receive our response.</p>
                 <button
                     className="btn btn-primary"
                     onClick={() => setSubmitted(false)}
